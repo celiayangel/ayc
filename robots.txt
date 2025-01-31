@@ -1,0 +1,7 @@
+User-agent: *
+# Disallow the entire site for all bots (use with caution!)
+Disallow: /
+
+User-agent: Googlebot
+# Disallow crawling of the temporary files directory for Googlebot
+Disallow: /tmp/
