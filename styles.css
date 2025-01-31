@@ -41,6 +41,11 @@ body {
     align-items: center;
     z-index: 0;
 
+    position: relative;
+    padding: 30px;
+    padding-bottom: 0;
+    left: 0;
+
 
     img {
         width: 100vw;
@@ -181,10 +186,46 @@ main {
 
 
 
+
+.mobile-menu-icon {
+    display: block;
+}
+
+.desktop-accordions {
+    display: none;
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+.title {
+
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+main {
+
+    padding: 0 0 ;
+    padding-bottom: 30px;
+
+}
+
+
+
+
 /* Responsive Design */
 @media (min-width: 1024px) {
     
- 
+    .mobile-menu-icon {
+        display: none;
+    }
+    
+    .desktop-accordions {
+        display: none;
+    }
 
     /* Desktop Accordions */
     .mobile-menu {
@@ -234,50 +275,10 @@ main {
     
     .comic-movil {
         display: none;
-        padding: 0;
-        margin: 0;
 
     }
 
     
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .image,
-    .image-top {
-        position: relative;
-        padding: 30px;
-        padding-bottom: 0;
-        left: 0;
-    }
 
-
-    .mobile-menu-icon {
-        display: block;
-    }
-
-    .desktop-accordions {
-        display: none;
-    }
-
-    .mobile-menu.active {
-        display: block;
-    }
-
-    .title {
-
-        align-items: flex-start;
-        justify-content: center;
-    
-    }
-
-    main {
-
-        padding: 0 0 ;
-        padding-bottom: 30px;
-
-    }
-
-    
-}
