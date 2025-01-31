@@ -55,6 +55,16 @@ body {
     padding-bottom: 200px;
 
 }
+
+.comic {
+
+    display: none;
+}
+
+.comic-movil {
+    display: block;
+}
+
 /* Mobile Menu Icon */
 .mobile-menu-icon {
     display: none; /* Hidden by default, shown on mobile */
@@ -169,7 +179,14 @@ main {
 /* Responsive Design */
 @media (min-width: 1024px) {
     
+    .comic {
 
+        display: block;
+    }
+    
+    .comic-movil {
+        display: none;
+    }
     /* Desktop Accordions */
     .mobile-menu {
         width: 100%;
