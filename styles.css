@@ -56,14 +56,6 @@ body {
 
 }
 
-.comic {
-
-    display: none;
-}
-
-.comic-movil {
-    display: block;
-}
 
 /* Mobile Menu Icon */
 .mobile-menu-icon {
@@ -108,11 +100,11 @@ body {
 
 .fecha {
 
-    /* background-image: url(img/boton_00_000.png); */
+    background-image: url(img/boton_00_000.png);
     width: auto;
     margin: auto;
     padding: 10px;
-    background-color: rgb(225, 236, 123);
+    /* background-color: rgb(225, 236, 123); */
 
     border-radius: 20px;
 
@@ -176,17 +168,24 @@ main {
     padding: 70px 0;
 }
 
+.comic {
+
+    display: none;
+
+}
+
+.comic-movil {
+    display: block;
+    padding: 0 !important;
+}
+
+
+
 /* Responsive Design */
 @media (min-width: 1024px) {
     
-    .comic {
+ 
 
-        display: block;
-    }
-    
-    .comic-movil {
-        display: none;
-    }
     /* Desktop Accordions */
     .mobile-menu {
         width: 100%;
@@ -224,6 +223,20 @@ main {
         padding: 20px;
         display: none;
         z-index: 100;
+    }
+
+    .comic {
+
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .comic-movil {
+        display: none;
+        padding: 0;
+        margin: 0;
+
     }
 
     
