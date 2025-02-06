@@ -110,6 +110,7 @@ p {
     top: 10px;
     right: 20px;
     z-index: 1000;
+    color: rgba(79, 113, 82, 0.912);
     
 }
 
@@ -117,6 +118,7 @@ p {
     background: none;
     border: none;
     font-size: 24px;
+    color: rgba(79, 113, 82, 0.912);
     cursor: pointer;
 }
 
@@ -130,11 +132,17 @@ p {
     min-width: 300px;
     height: 100%;
     background: #8dd3a1cb;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    // box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     padding-top: 50px;
     overflow-y: auto;
     z-index: 999;
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    background-image: url(img/menu_back_00.png);
+
     
 }
 
@@ -169,8 +177,7 @@ p {
 .accordion-header {
     width: 100%;
     background: rgb(237, 255, 252);
-    color: rgba(36, 36, 36, 0.912);
-    border: 0px solid gray;
+    color: rgba(79, 113, 82, 0.912);
     /* border-bottom: 5px solid gray;
     border-right: 5px solid gray; */
     padding: 10px;
@@ -179,6 +186,8 @@ p {
     font-size: 16px;
     /* border-radius: 10px; */
     font-weight: bold;
+    border: 1px solid rgb(45, 101, 45);
+    border-radius: 5px;
 
 
 }
@@ -247,7 +256,7 @@ main {
 
 .red {
 
-    background-color: rgb(30, 127, 101);
+    background-color: rgba(79, 113, 82, 0.912);
     color: white;
 
 }
