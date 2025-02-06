@@ -231,6 +231,7 @@ li {
     padding: 10px;
     z-index: 1;
     overflow: auto;
+    transition: 2s;
   }
   .accordion-item {
     flex: 1;
@@ -238,14 +239,17 @@ li {
     position: relative;
   }
   .accordion-header {
+    transition: width 0.3s ease, height 0.3s ease, flex-basis 0.3s ease, margin 0.3s ease, padding 0.3s ease;
     padding: 10px;
     text-align: center;
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
+    min-width: 0;
   }
   .accordion-content {
-    position: fixed;
+    max-width: 500px;
+    position: relative;
     left: 0;
     width: calc(100vw - 40px);
     margin: 20px;
