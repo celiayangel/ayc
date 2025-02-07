@@ -23,3 +23,26 @@ accordionHeaders.forEach(header => {
         content.style.display = isOpen ? 'none' : 'block';
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Target the 'fecha' div
+    var fechaDiv = document.querySelector('.fecha');
+    // Target the 'fecha-numero' img
+    var fechaNumeroImg = document.querySelector('.fecha-numero');
+
+    // Function to hide both elements
+    function hideElements() {
+        fechaDiv.style.display = 'none';
+        fechaNumeroImg.style.display = 'none';
+    }
+
+    // Add click event listener to the 'fecha' div
+    if(fechaDiv) {
+        fechaDiv.addEventListener('click', hideElements);
+    }
+
+    // Add click event listener to the 'fecha-numero' img
+    if(fechaNumeroImg) {
+        fechaNumeroImg.addEventListener('click', hideElements);
+    }
+});
