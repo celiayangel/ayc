@@ -9,18 +9,34 @@ menuToggle.addEventListener('click', () => {
 // Accordion Functionality (Mobile and Desktop)
 const accordionHeaders = document.querySelectorAll('.accordion-header');
 
+function handleEvent(event) {
+    const header = event.target; // Get the element that triggered the event
+    const content = header.nextElementSibling; // Get the next sibling (accordion content)
+    const isOpen = content.style.display === 'block';
+
+    // Close all accordions
+    accordionHeaders.forEach(h => {
+        h.nextElementSibling.style.display = 'none';
+    });
+
+    // Toggle the clicked accordion
+    if (event.type === 'mouseover' || event.type === 'click') {
+        content.style.display = 'block';
+    } 
+}
+
 accordionHeaders.forEach(header => {
-    header.addEventListener('click', () => {
-        const content = header.nextElementSibling; // Get the next sibling (accordion content)
-        const isOpen = content.style.display === 'block';
+    header.addEventListener('mouseover', handleEvent);
+    header.addEventListener('click', handleEvent);
+});
 
-        // Close all accordions
-        accordionHeaders.forEach(h => {
-            h.nextElementSibling.style.display = 'none';
-        });
-
-        // Toggle the clicked accordion
-        content.style.display = isOpen ? 'none' : 'block';
+const accordionContents = document.querySelectorAll('.accordion-content');
+accordionContents.forEach(content => {
+    content.addEventListener('mouseover', () => {
+        content.style.display = 'block';
+    });
+    content.addEventListener('mouseout', () => {
+        content.style.display = 'none';
     });
 });
 
