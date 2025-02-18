@@ -20,7 +20,7 @@ function handleEvent(event) {
     });
 
     // Toggle the clicked accordion
-    if (event.type === 'mouseover' || event.type === 'click') {
+    if ( event.type === 'click') {
         content.style.display = 'block';
     } 
 }
