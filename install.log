@@ -1,0 +1,9 @@
+[18:59:42 2025-02-21] FETCHING Version 2.39.3
+[18:59:42 2025-02-21] CREATING /Users/saripatlican/.spicetify
+[18:59:42 2025-02-21] DOWNLOADING https://github.com/spicetify/cli/releases/download/v2.39.3/spicetify-2.39.3-darwin-arm64.tar.gz
+[18:59:43 2025-02-21] EXTRACTING /Users/saripatlican/.spicetify/spicetify.tar.gz
+[18:59:43 2025-02-21] SETTING EXECUTABLE PERMISSIONS TO /Users/saripatlican/.spicetify/spicetify
+[18:59:43 2025-02-21] REMOVING /Users/saripatlican/.spicetify/spicetify.tar.gz
+[18:59:43 2025-02-21] APPENDING /Users/saripatlican/.spicetify to PATH in /Users/saripatlican/.zshrc
+[18:59:43 2025-02-21] spicetify v2.39.3 was installed successfully to /Users/saripatlican/.spicetify
+[18:59:43 2025-02-21] Run 'spicetify --help' to get started
